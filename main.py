@@ -64,7 +64,7 @@ def ans(message):
     
     markup1.add(*btn)
     if message.data == "buy2":
-        bot.send_message(cid, "Нажали 1-ю кнопку",reply_markup=keyboard)
+        #bot.send_message(cid, "Нажали 1-ю кнопку",reply_markup=keyboard)
         bot.send_photo(cid, open(os.path.join(DIR, random.choice(os.listdir(DIR))),'rb'),caption=all_life,reply_markup=markup1)
       
        
