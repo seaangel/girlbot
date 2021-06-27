@@ -25,12 +25,12 @@ def cont(message):
         name = 'Имя: ' + random.choice(lines)
     boobs = '\nРазмеры: '+str(random.randint(85,95))+'🍒'+' '+str(random.randint(60,70))+'⌛️'+' '+str(random.randint(80,100))+'🍑'
     age = 'Возраст: '+ str(random.randint(18,30))
-    adr = 'www.ya.ru'
+    adr = 'https://vk.cc/c3dRgx'
     
     
     
     markup1 = telebot.types.InlineKeyboardMarkup()
-    btn = [telebot.types.InlineKeyboardButton(text='🔥', url=adr),telebot.types.InlineKeyboardButton(text='➡️', callback_data='buy2')]
+    btn = [telebot.types.InlineKeyboardButton(text='🔥 Написать', url=adr),telebot.types.InlineKeyboardButton(text='➡️', callback_data='buy2')]
     
     markup1.add(*btn)
     
@@ -57,10 +57,10 @@ def ans(message):
         name = 'Имя: ' + random.choice(lines)
     boobs = '\nРазмеры: '+str(random.randint(85,95))+'🍒'+' '+str(random.randint(60,70))+'⌛️'+' '+str(random.randint(80,100))+'🍑'
     age = 'Возраст: '+ str(random.randint(18,30))
-    adr = 'www.ya.ru'
+    adr = 'https://vk.cc/c3dRgx'
     all_life = name + age + boobs +'\n'+'\n'+adr
     markup1 = telebot.types.InlineKeyboardMarkup()
-    btn = [telebot.types.InlineKeyboardButton(text='🔥', url=adr),telebot.types.InlineKeyboardButton(text='➡️', callback_data='buy2')]
+    btn = [telebot.types.InlineKeyboardButton(text='🔥 Написать', url=adr),telebot.types.InlineKeyboardButton(text='➡️', callback_data='buy2')]
     
     markup1.add(*btn)
     if message.data == "buy2":
